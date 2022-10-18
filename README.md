@@ -2,9 +2,7 @@
 
 # OKP4 Ручная настройка узла
 
-<p align="center">
-  <img height="220" height="auto" src="okp4.png">
-</p>
+
 
 Оригинальный документ:
 >- [Оригинальный документ](https://docs.okp4.network/docs/nodes/installation)
