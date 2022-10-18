@@ -176,4 +176,18 @@ sudo systemctl restart okp4d
 okp4d tx staking delegate ВАШ ВАЛОПЕРАДРЕС
  10000000uknow --from=имя_кошелька --chain-id=okp4-nemeton --gas=auto
 ```
+### Проверить баланс (будет отображаться только после полного синхрона)
 
+```
+okp4d q bank balances адрес-кошелька
+# amount: "1000000000000000000"
+```
+
+### Дождитесь полной синхронизации ноды.
+
+Проверить можно
+
+```
+curl -s localhost:26657/status
+# Нода синхронизирована, если в строчке "catching_up" значение false
+```
