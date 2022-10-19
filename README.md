@@ -148,55 +148,55 @@ okp4d tx staking create-validator \
 ```
 
 ### Полезные команды
-# Проверить логи
+## Проверить логи
 ```
 journalctl -fu okp4d -o cat
 ```
 
-# запустить службу
+## запустить службу
 ```
 sudo systemctl start okp4d
 ```
 
-# остановить службу
+## остановить службу
 ```
 sudo systemctl stop okp4d
 ```
 
-# Перезапустите службу
+## Перезапустите службу
 
 ```
 sudo systemctl restart okp4d
 ```
-# делегировать валидатору
+## делегировать валидатору
 
-# пример команды. подставьте ниже свои значения, в примере 2 токена
-# okp4d tx staking delegate okp4valoper1xckd3h5cmkr2rhxd0q9tuntthvlkew2kcfhd6z 2000000uknow --from otmorozky-nemeton --chain-id=okp4-nemeton --fees 555uknow -y
+## пример команды. подставьте ниже свои значения, в примере 2 токена
+## okp4d tx staking delegate okp4valoper1xckd3h5cmkr2rhxd0q9tuntthvlkew2kcfhd6z 2000000uknow --from otmorozky-nemeton --chain-id=okp4-nemeton --fees 555uknow -y
 
 ```
 okp4d tx staking delegate ВАШ_ВАЛОПЕРАДРЕС 2000000uknow --from=имя_кошелька --chain-id=okp4-nemeton --fees 555uknow -y
 ```
 
-# делегировать от одного валидатора другому валидатору
+## делегировать от одного валидатора другому валидатору
 ```
 okp4d tx staking redelegate адрес_валидатора адрес_валидатора 1000000uknow --from имя_кошелька --chain-id=okp4-nemeton --fees 555uknow -y
 ```
 
-# Проверить баланс (будет отображаться только после полного синхрона)
+## Проверить баланс (будет отображаться только после полного синхрона)
 
 ```
 okp4d q bank balances адрес-кошелька
 # amount: "1000000"
 ```
 
-# Дождитесь полной синхронизации ноды.
-# Проверить можно
+## Дождитесь полной синхронизации ноды.
+## Проверить можно
 
 ```
 curl -s localhost:26657/status
 # Нода синхронизирована, если в строчке "catching_up" значение false
 ```
-# установка avatar (инструкция можно посмотреть здесь https://teletype.in/@letskynode/Archway_RU#ApGa )
+## установка avatar (инструкция можно посмотреть здесь https://teletype.in/@letskynode/Archway_RU#ApGa )
 
 
 ```
@@ -207,15 +207,15 @@ okp4d tx staking edit-validator \
  --from "имя_кошелька"
 ```
 
-# выход из тюрьмы
+## выход из тюрьмы
 ```
 okp4d tx slashing unjail --from имя_кошелька --fees 555uknow -y
 ```
-# Голосование
+## Голосование
 ```
 okp4d tx gov vote 1 yes --from имя_кошелька --chain-id=okp4-nemeton
 ```
-#  Вывести все награды:
+##  Вывести все награды:
 ```
 okp4d tx distribution withdraw-all-rewards --from имя_кошелька --chain-id=okp4-nemeton --fees 555uknow -y
 ```
