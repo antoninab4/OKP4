@@ -171,7 +171,7 @@ sudo systemctl restart okp4d
 ## делегировать валидатору
 
 #### пример команды. подставьте ниже свои значения, в примере 2 токена
-##### okp4d tx staking delegate okp4valoper1xckd3h5cmkr2rhxd0q9tuntthvlkew2kcfhd6z 2000000uknow --from otmorozky-nemeton --chain-id=okp4-nemeton --fees 555uknow -y
+###### okp4d tx staking delegate okp4valoper1xckd3h5cmkr2rhxd0q9tuntthvlkew2kcfhd6z 2000000uknow --from otmorozky-nemeton --chain-id=okp4-nemeton --fees 555uknow -y
 
 ```
 okp4d tx staking delegate ВАШ_ВАЛОПЕРАДРЕС 2000000uknow --from=имя_кошелька --chain-id=okp4-nemeton --fees 555uknow -y
