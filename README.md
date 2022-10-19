@@ -193,3 +193,13 @@ okp4d q bank balances адрес-кошелька
 curl -s localhost:26657/status
 # Нода синхронизирована, если в строчке "catching_up" значение false
 ```
+### установка avatar
+
+
+```
+okp4d tx staking edit-validator \
+ --identity "код_с_сайта" \
+ --details "Gruppa_Pervogo_Proekta" \
+ --node `grep -oPm1 "(?<=^laddr = \")([^%]+)(?=\")" $HOME/.okp4d/config/config.toml` \
+ --from "имя_кошелька"
+```
