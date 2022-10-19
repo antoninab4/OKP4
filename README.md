@@ -193,7 +193,7 @@ okp4d q bank balances адрес-кошелька
 curl -s localhost:26657/status
 # Нода синхронизирована, если в строчке "catching_up" значение false
 ```
-### установка avatar
+### установка avatar (инструкция можно посмотреть здесь https://teletype.in/@letskynode/Archway_RU#ApGa )
 
 
 ```
@@ -202,4 +202,9 @@ okp4d tx staking edit-validator \
  --details "Gruppa_Pervogo_Proekta" \
  --node `grep -oPm1 "(?<=^laddr = \")([^%]+)(?=\")" $HOME/.okp4d/config/config.toml` \
  --from "имя_кошелька"
+```
+
+### выход из тюрьмы
+```
+okp4d tx slashing unjail --from имя_кошелька --fees 555uknow -y
 ```
