@@ -182,7 +182,7 @@ okp4d tx staking delegate ВАШ ВАЛОПЕРАДРЕС 2000000uknow --from=и
 
 ```
 okp4d q bank balances адрес-кошелька
-# amount: "1000000000000000000"
+# amount: "1000000"
 ```
 
 ### Дождитесь полной синхронизации ноды.
