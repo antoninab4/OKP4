@@ -231,3 +231,7 @@ sudo rm $HOME/.okp4d* -rf
 sudo rm $HOME/okp4d -rf
 sed -i '/OKP_/d' ~/.bash_profile
 ```
+#### доступные проводники✅ 
+https://okp4.explorers.guru/
+https://explorer.bccnodes.com/okp4
+https://explore.okp4.network/okp4 
